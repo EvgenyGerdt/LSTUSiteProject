@@ -1,6 +1,14 @@
 body
 	+Light
 	color: $text-color
+.section
+	padding: 100px 0
+	&-title
+		font-size: 30px
+		+bold
+		text-align: center
+	&__title
+		margin-bottom: 100px
 .button-o
 	background-color: white
 	border: 2px solid $primary
@@ -14,7 +22,8 @@ body
 	padding-left: 30px
 	border: 1px solid #dddddd
 .bg-secondary
-	background: $bg-secondary
+	background: $bg-secondary 
+
 .button
 	border: none
 	text-transform: uppercase
