@@ -112,6 +112,10 @@ body {
   }
 }
 
+iframe {
+  margin-bottom: 80px;
+}
+
 .navbar {
   position: fixed;
   left: 0;
