@@ -427,8 +427,8 @@ iframe {
 
 .photos__card__button {
   border: none;
-  border-font-size: 11px;
   padding: 10px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -528,6 +528,73 @@ iframe {
   }
   .price-block__card {
     margin-left: 20px;
+  }
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copy {
+  color: #767676;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__contacts {
+    margin-top: 30px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
