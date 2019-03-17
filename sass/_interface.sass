@@ -22,7 +22,7 @@ body
 	padding-left: 30px
 	border: 1px solid #dddddd
 .bg-secondary
-	background: $bg-secondary 
+	background: #ffffff
 
 .button
 	border: none
@@ -31,6 +31,12 @@ body
 	background-color: $primary
 	color: #ffffff
 	+bold
+	&-fitting	
+		color: $primary
+		background: #fff
+	&-add	
+		background: $primary		
+		color: #ffffff
 @media (max-width: 576)
 	.button-o
 		font-size: 10px

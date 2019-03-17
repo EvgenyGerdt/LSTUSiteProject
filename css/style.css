@@ -79,7 +79,7 @@ body {
 }
 
 .bg-secondary {
-  background: #f1f1f1;
+  background: #ffffff;
 }
 
 .button {
@@ -89,6 +89,16 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background: #fff;
+}
+
+.button-add {
+  background: #507fe1;
+  color: #ffffff;
 }
 
 @media (max-width: 576) {
@@ -250,7 +260,7 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/B2.jpg") no-repeat center top 80px;
+  background: #ffffff url("../img/hero/B2.jpg") no-repeat center top 80px;
   background-size: contain;
   padding-top: 180px;
   padding: 270px;
@@ -277,6 +287,7 @@ body {
 
 .enjoy {
   padding: 129px 0;
+  background: #fff url("../img/hero/header-back.jpg") center;
 }
 
 .enjoy-block {
@@ -374,13 +385,10 @@ body {
   }
 }
 
-img {
-  height: 170px;
-  width: 530px;
-}
-
 .photos-block {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -389,7 +397,55 @@ img {
 }
 
 .photos-card {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.photos__card {
+  margin-bottom: 30px;
+}
+
+.photos__card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.photos__card__button {
+  border: none;
+  border-font-size: 11px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.photos__card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+  padding: 10px;
+}
+
+.photos__card__image {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .photos-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .photos-card {
+    max-width: 470px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
