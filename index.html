@@ -13,11 +13,11 @@
 		<div class="menu ">
 			<div class="container">
 				<nav class="menu__nav">
-					<a href="#" class="menu__link">Главная</a>
-					<a href="#" class="menu__link">Купить билеты</a>
-					<a href="#" class="menu__link">Фотоотчеты</a>
+					<a href="index.html" class="menu__link">Главная</a>
+					<a href="#" class="menu__link" id="scroll_down_tickets">Купить билеты</a>
+					<a href="#" class="menu__link" id="scroll_down_photos">Фотоотчеты</a>
 					<a href="#" class="menu__link">Статистика</a>
-					<a href="#" class="menu__link">О нас</a>
+					<a href="#" class="menu__link" id="scroll_down_about">О нас</a>
 				</nav>
 			</div>
 			<!-- /.container -->
@@ -56,7 +56,7 @@
 					Только <br> самый лучший <br> останется победителем
 				</h1>
 				<h2 class="hero__subtitle">2000 участников</h2>
-				<button class="button hero__button">Принять участие</button>
+				<button class="button hero__button" id="enjoy_button">Принять участие</button>
 			</div>
 			<!-- /.container -->
 		</div>
@@ -326,6 +326,18 @@
 	</footer>
 	<!-- /.footer -->
 	<!-- Подключение виджета обратной связи через соцсети -->
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="https://spikmi.com/Widget?Id=471"></script>
+	<script>
+		$(window).load(function(){
+			$('.menu-button').on('click',function(){
+				$('.menu').toggleClass('menu_active');	
+			});
+		});
+	</script>
+	<script src="js/tickets_dropdown.js"></script>
+	<script src="js/photos_dropdown.js"></script>
+	<script src="js/about_dropdown.js"></script>
+	<script src="js/enjoy_dropdown.js"></script>
 </body>
 </html>
